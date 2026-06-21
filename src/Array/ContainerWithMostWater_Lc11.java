@@ -7,7 +7,7 @@ public class ContainerWithMostWater_Lc11 {
         int j=height.length-1;
         int max=Integer.MIN_VALUE;
         while(i<j){
-            int ht=Math.min(height[i],height[j]);
+            int ht=Math.min(height[i],height[j]); // yhi water trap ko control krega
             int wt=j-i;
             int area=ht*wt;
             max=Math.max(max,area);
