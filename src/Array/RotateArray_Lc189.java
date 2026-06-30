@@ -6,6 +6,7 @@ public class RotateArray_Lc189 {
         int n=nums.length;
         int start=0;
         int end=n-1;
+        k=k%n; // sove error( Array out of bound)
         while(start<end){
             int temp=nums[start];
             nums[start]=nums[end];
