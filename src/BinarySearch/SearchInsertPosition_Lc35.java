@@ -1,7 +1,7 @@
 package BinarySearch;
 
 public class SearchInsertPosition_Lc35 {
-    //Time complexity-->O(nLogn)
+    //Time complexity-->O(Logn)
     public int searchInsert(int[] nums, int target) {
         int n = nums.length;
         int low = 0;
