@@ -1,6 +1,7 @@
 package BinarySearch;
 
 public class NumberofOccurrence_GFG {
+    //Time complexity-->O(logn) && space complexity-->O(1)
     int countFreq(int[] arr, int target) {
         int first=firstOccur(arr,target);
         if(first==-1) return 0;
