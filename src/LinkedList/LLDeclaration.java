@@ -58,21 +58,6 @@ class LL{
         }
         size--;
     }
-    void removeAtTail(){
-        if(head==null){
-            System.out.println("List is empty");
-        }
-        if(head.next==null){
-            head=tail=null;
-        }
-        Node temp=head;
-        while(temp.next.next!=null){
-            temp=temp.next;
-        }
-        temp.next=null;
-        tail=temp;
-        size--;
-    }
     void Display(){
         if(head==null)return;
         Node temp=head;
@@ -129,49 +114,7 @@ class LL{
         }
         size--;
     }
-    void removeElement(int ele){
-        if(head==null){
-            System.out.println("List is empty");
-            return;
-        }
-        if(head.data==ele){
-            head=head.next;
-            size--;
-            return;
-        }
-        Node temp=head;
-        Node prev=null;
-        while(temp!=null){
-            if(temp.data==ele){
-                prev.next=temp.next;
-                size--;
-                break;
-            }
-            prev=temp;
-            temp=temp.next;
-        }
-    }
-    void insertBeforeValue(int ele,int key){
-        if(head==null){
-            System.out.println("List is empty");
-            return;
-        }
-        if(head.data==ele){
-            addAtHead(key);
-            return;
-        }
-        Node temp=head;
-        while(temp.next!=null){
-            if(temp.next.data==ele){
-                Node newNode=new Node(key);
-                newNode.next=temp.next;
-                temp.next=newNode;
-                size++;
-                break;
-            }
-            temp=temp.next;
-        }
-    }
+
 }
 public class LLDeclaration {
     public static void main(String[] args) {
