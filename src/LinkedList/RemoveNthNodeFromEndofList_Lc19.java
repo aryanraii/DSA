@@ -17,6 +17,7 @@ public class RemoveNthNodeFromEndofList_Lc19 {
          }
          slow.next=slow.next.next;
          return head;
+
     }
 
     //Time complexity-->O(2n) space complexity-->O(1)
