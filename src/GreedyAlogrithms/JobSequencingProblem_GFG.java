@@ -1,6 +1,7 @@
 package GreedyAlogrithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class JobSequencingProblem_GFG {
     class Pair{
@@ -19,7 +20,7 @@ public class JobSequencingProblem_GFG {
             sortProfit[i]=new Pair(profit[i],i);
             maxDeadline=Math.max(maxDeadline,deadline[i]);
         }
-        Arrays.sort(sortProfit,(a,b)->b.val-a.val);
+        Arrays.sort(sortProfit,(a, b)->b.val-a.val);
         Boolean visited[]=new Boolean[maxDeadline+1];
         Arrays.fill(visited,false);
         int ans=0;
