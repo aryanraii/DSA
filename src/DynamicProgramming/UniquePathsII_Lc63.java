@@ -3,7 +3,7 @@ package DynamicProgramming;
 public class UniquePathsII_Lc63 {
 /// Tabulation-->
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        int m=obstacleGrid.length
+        int m=obstacleGrid.length;
         int n=obstacleGrid[0].length;
         int[][]dp=new int[m][n];
         for(int i=0; i<m; i++){
@@ -27,7 +27,6 @@ public class UniquePathsII_Lc63 {
         return  dp[m-1][n-1];
     }
 ///  Memoization-->
-
     // int dp[][];
     // public int uniquePathsWithObstacles(int[][] obstacleGrid) {
     //     int m=obstacleGrid.length;
